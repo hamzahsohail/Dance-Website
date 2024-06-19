@@ -1,0 +1,67 @@
+body
+{
+    display: block;
+}
+
+#h6
+{
+    text-align: center;
+    margin-top: 150px;
+    color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+form{
+    display: grid;
+    justify-content: center;
+    grid-gap: 10px;
+    margin: 20px auto;
+
+    width: max-content;
+
+    grid-template-areas: 
+    'firstName lastName'
+    'phoneNumber emailAddress'
+    'message message'
+    'submit submit';
+}
+
+form input
+{
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+}
+
+form textarea
+{
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+    grid-area: message;
+}
+
+form input::placeholder
+{
+    font-family: monospace;
+}
+
+#submit
+{
+    font-family: inherit;
+    width: 100%;
+    padding: 7px 0;
+    border: 0;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+
+    grid-area: submit;
+}
+
+#submit:hover
+{
+    color: black;
+    background-color: white;
+}

@@ -1,0 +1,102 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    scroll-behavior: smooth;
+
+    background: top/cover no-repeat url("https://raw.githubusercontent.com/CodeWithHarry/DanceWebsite/master/static/bg.jpg");
+    color: lightgray;
+
+    justify-content: space-between;
+}
+
+#navbar
+{
+    padding: 10px 0;
+    background-color: black;
+
+    border-bottom: 2px solid white;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+#navbar ul
+{
+    display: flex;
+    justify-content: center;
+}
+
+#navbar ul li
+{
+    list-style-type: none;
+    margin: 10px 20px;
+}
+
+#navbar ul li a
+{
+    text-decoration: none;
+    color: white;
+}
+
+#navbar ul li a:hover
+{
+    text-decoration: underline;
+}
+
+#navbar button
+{
+    margin: 2.5px 0;
+    padding: 0 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+#navbar button a
+{
+    text-decoration: none;
+    color: black;
+}
+
+#homeSection
+{
+    padding: 20px 0;
+    background-color: rgba(128, 128, 128, 0.125);
+    backdrop-filter: blur(12.5px);
+}
+
+#h1
+{
+    text-align: center;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+#aboutSection, #servicesSection, #classesSection, #contactSection
+{
+    text-align: center;
+}
+
+footer
+{
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    padding: 5px 0;
+
+    border-top: 2px solid white;
+}

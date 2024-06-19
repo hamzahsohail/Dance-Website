@@ -1,0 +1,21 @@
+extends base.pug
+
+block style
+    style
+        include ../static/style.css
+        include ../static/style-button.css
+
+block content
+    h1#h6 Apply Now
+    form(action="/apply-now", method="post")
+        input#firstName(type="text", name="firstName", placeholder="first name")
+        input#lastName(type="text", name="lastName", placeholder="last name")
+        input#phoneNumber(type="text", name="phoneNumber", placeholder="phone number")
+        input#emailAddress(type="text", name="emailAddress", placeholder="email address")
+        textarea#message(name="message", placeholder="message", cols="30", rows="10")
+        button#submit(type="submit") Submit
+block footer
+    footer Copyright &copy; Hamzah Dance Academy Dot Com 
+
+block script
+    script(src="../static/script.js") 
